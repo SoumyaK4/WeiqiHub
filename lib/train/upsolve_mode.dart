@@ -1,4 +1,0 @@
-enum UpsolveMode {
-  auto,
-  manual;
-}
