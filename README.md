@@ -1,6 +1,6 @@
 <h1 align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/SoumyaK4/WeiqiHub/blob/main/Images/header_dark.png">
+    <source media="(prefers-color-scheme: dark)" srcset="./Images/header_dark.png">
     <img alt="SWHub" src="./Images/header_light.png">
   </picture>
 </h1>
