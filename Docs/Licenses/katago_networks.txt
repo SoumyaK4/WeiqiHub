@@ -1,0 +1,68 @@
+KataGo neural networks
+
+The following license applies to the official KataGo neural network files and
+checkpoints from katagotraining.org, including networks in the "kata1" run,
+subject to the exceptions below.
+
+Official KataGo GitHub release models
+
+SWHub also offers the transformer models published with KataGo v1.17.0 and the
+HumanSL model b18c384nbt-humanv0.bin.gz published with KataGo v1.15.0. These
+models are downloaded directly from KataGo's official GitHub releases rather
+than from katagotraining.org. For their provenance and applicable license
+information, see the KataGo project license in SWHub's separate "KataGo engine"
+licence entry and the corresponding official release pages:
+
+https://github.com/lightvector/KataGo/releases/tag/v1.17.0
+https://github.com/lightvector/KataGo/releases/tag/v1.15.0
+
+katagotraining.org Neural Network License
+
+Copyright 2026 David J Wu ("lightvector").
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+the neural net files or training weight files (the "Software"), to deal in the
+Software without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Exceptions
+
+The oldest networks imported from prior runs before distributed training
+began, marked on katagotraining.org as belonging to the "g170" run, are not
+covered by the license above. They are under CC0 and effectively public domain.
+
+The "zhizi" networks released by ZhiziGo for use in KataGo's main "kata1"
+training run are released under the following license:
+
+Copyright (c) 2026 hzyhhzy & zhizigo.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

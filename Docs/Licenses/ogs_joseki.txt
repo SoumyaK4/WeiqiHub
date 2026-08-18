@@ -1,0 +1,46 @@
+OGS Joseki Explorer content
+
+Source: https://online-go.com/joseki/15081
+Project: https://github.com/online-go/online-go.com
+Snapshot retrieved: 14 August 2026
+
+SWHub bundles a transformed offline snapshot of the Online-Go.com (OGS)
+Joseki Explorer position graph. The snapshot contains move sequences, move
+classifications, position descriptions, board marks, tags, links, and joseki
+source metadata obtained from the public OGS Joseki API. Public discussion
+fields and contributor identifiers are not bundled.
+
+Copyright and licence status
+
+The source code of the online-go.com web client is licensed under the GNU
+Affero General Public License, version 3 or later:
+
+https://github.com/online-go/online-go.com/blob/main/LICENSE
+
+SWHub does not include or modify that web-client source code. The repository's
+software licence does not state that the separately served OGS Joseki Explorer
+database or its user-contributed content is licensed under the AGPL.
+
+The OGS Terms of Service state that contributors retain ownership of submitted
+content and grant Online-Go.com a worldwide, royalty-free, non-exclusive,
+perpetual, irrevocable, and fully sublicensable licence to use and distribute
+it. The terms do not publish a general downstream licence for recipients of
+content obtained through the Joseki API:
+
+https://online-go.com/docs/terms-of-service
+
+The historical OGS Joseki backend repository also contains no licence file:
+
+https://github.com/GreenAsJade/godojo-server
+
+Attribution
+
+The bundled material is from the OGS Joseki Explorer and its community
+contributors. Online-Go.com and the OGS contributors are not affiliated with,
+and do not endorse, SWHub. Source references embedded in individual positions
+remain attributed through their descriptions and links.
+
+Important: redistribution of this bundled snapshot requires separate
+permission or a sublicense from Online-Go.com and any other relevant rights
+holders. This notice records provenance and known terms; it does not itself
+grant permission to redistribute the OGS Joseki Explorer content.
