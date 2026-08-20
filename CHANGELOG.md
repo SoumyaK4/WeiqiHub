@@ -1,6 +1,11 @@
 # Changelog
 
 ## 0.2.6+78
+- Added a cumulative estimated HumanSL rank to Game Focus Dashboard Home. Each completed rank-aware analysis contributes a bounded phase-balanced sample of the app user's moves across 20k–9d, and deleting a game immediately removes its evidence from the recalculated estimate.
+- Made Game Focus rank-aware analysis status accurate, including explicit partial/unavailable objective fallbacks, and normalized OGS numeric rankings so unclear SGF ranks can use the discovered account rank.
+- Unified KataGo, Career, and Game Focus opening/midgame/endgame labels with fixed per-board-size move cutoffs, migrated saved Game Focus drill phases without reanalysis, and made the Career/Game Focus AI Top 5 metric a literal top-five match.
+- Made Performance Report rank output clearer and more honest: it now reports a HumanSL style fit with its full uncertainty range, while two-symmetry raw-policy probes reduce noise without changing normal KataGo analysis workloads.
+- Hardened stats and leaderboard sync with restore-before-upload startup and manual Me-page syncing, acknowledged score retries, rolling periods, compressed per-user snapshots, and conflict-safe multi-device merges while retaining compatibility with pre-v0.2.7 clients.
 - Renamed the Train and Home destinations to Puzzles and Tools, moved Joseki and Global Leaderboards into their owning sections, capped both tile grids at three columns, put Me first in the wide navigation rail, added a direct Game Focus Profile action, and hid the stats-sync key on screen.
 - Replaced Game Tsumegos with Game Focus: import complete local or supported public-account games, analyze them in a resumable KataGo queue, review saved results offline, and turn mistakes into full-board drills with their own two-week schedule.
 - Added Game Focus Profile, combining configured public EGD/server identities into source-filterable rank-progress and win/loss charts, cached locally without starting KataGo.
