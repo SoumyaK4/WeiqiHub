@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 General question / discussion"
+    url: "https://discord.gg/ptjzTWU9SP"
+    about: "Ask usage questions or discuss ideas that are not yet a concrete bug or feature request."

@@ -1,0 +1,105 @@
+name: "🌐 Online server / connection problem"
+description: "Report problems with Fox, Tygem, OGS, teaching rooms, login, games, or connectivity"
+title: "[Online] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never post your password, login token, session cookie, API key, or teaching-room password.**
+        Redact private information from logs and screenshots before attaching them.
+
+  - type: input
+    id: version
+    attributes:
+      label: SWHub version
+      placeholder: "e.g. SWHub-v0.2.6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: Server / online feature
+      options:
+        - Fox Weiqi
+        - Tygem
+        - OGS
+        - Teaching room
+        - Voice / chat in a teaching room
+        - EGD
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Type of problem
+      options:
+        - Cannot connect / disconnects
+        - Lobby / room / game list problem
+        - Starting or joining a game
+        - Moves / board state out of sync
+        - Chat / voice problem
+        - Result / scoring / game-end problem
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Connect to ...
+        3. ...
+    validations:
+      required: true
+
+  - type: input
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      placeholder: "e.g. every time, about 1 in 5 games, started today"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs / error text
+      description: "Remove account names, passwords, tokens, cookies, room passwords, and other secrets."
+      render: text
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or video
+      description: "Drag files here after redacting private account information."
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: "I removed passwords, tokens, cookies, room passwords, and other private credentials."
+          required: true

@@ -1,0 +1,82 @@
+name: "🧩 Tsumego / puzzle content problem"
+description: "Report an incorrect status, solution, move, rank, or other puzzle-data issue"
+title: "[Tsumego] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for puzzle/content errors rather than app crashes or UI bugs.
+        A `wqhub://t/...` link or puzzle identifier is especially useful when available.
+
+  - type: input
+    id: version
+    attributes:
+      label: SWHub version
+      placeholder: "e.g. SWHub-v0.2.6"
+    validations:
+      required: true
+
+  - type: input
+    id: puzzle
+    attributes:
+      label: Puzzle link or identifier
+      description: "Paste the wqhub:// link, puzzle ID, collection/problem number, or another unique identifier."
+      placeholder: "e.g. wqhub://t/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: What seems wrong?
+      options:
+        - Alive / dead / unsettled status
+        - Correct first move or solution sequence
+        - Refutation / alternate valid move missing
+        - Rank / difficulty
+        - Problem position / stones / board setup
+        - Duplicate problem
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: What does SWHub currently show?
+      description: "Describe the current status/solution/result."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it show instead?
+      description: "Explain the correct reading, sequence, status, or metadata. Coordinates/variations are welcome."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reading / evidence
+      description: "Give the key variation(s) or reasoning that demonstrates the issue."
+      placeholder: |
+        Example:
+        - If Black plays ...
+        - White responds ...
+        - Therefore the group is ...
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshot, SGF, or other supporting file
+      description: "Drag in a screenshot or SGF if it makes the position easier to verify."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: "I checked that the puzzle identifier/link refers to the position I am reporting."
+          required: true

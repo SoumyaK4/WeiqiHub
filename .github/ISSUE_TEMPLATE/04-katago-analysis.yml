@@ -1,0 +1,114 @@
+name: "🤖 KataGo / AI related problem"
+description: "Report local or remote KataGo analysis, overlays, graphs, scoring, or engine integration issues"
+title: "[KataGo] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for KataGo integration or analysis-output problems.
+        **Do not include API keys, auth tokens, private WebSocket credentials, or other secrets.**
+
+  - type: input
+    id: version
+    attributes:
+      label: SWHub version
+      placeholder: "e.g. SWHub-v0.2.6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: engine
+    attributes:
+      label: KataGo setup
+      options:
+        - Local engine
+        - Remote WebSocket engine
+        - Both / reproducible with either
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: analysis_area
+    attributes:
+      label: What part is affected?
+      options:
+        - Engine does not start / connect
+        - Analysis does not run / stops
+        - Suggested moves / top-move overlay
+        - Ownership overlay
+        - Rank display
+        - Win-rate / score / point-loss graph
+        - Score estimation
+        - Analysis play mode
+        - Game Focus
+        - Career mode
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Engine / model setup
+      description: "Provide useful engine/model/config details, but remove credentials and private endpoint secrets."
+      placeholder: "KataGo build/model, local vs remote, relevant settings, etc."
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Load/open ...
+        2. Start KataGo ...
+        3. Enable ...
+        4. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted engine / app logs
+      render: text
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: SGF, screenshot, or other file
+      description: "Attach an SGF or screenshot if the issue depends on a particular board position."
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: "I removed credentials, tokens, and other secrets from logs and configuration details."
+          required: true

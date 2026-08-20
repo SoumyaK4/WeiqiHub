@@ -1,0 +1,64 @@
+name: "✨ Feature request"
+description: "Suggest an improvement or new capability for SWHub / WeiqiHub"
+title: "[Feature] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the app
+      options:
+        - Local board / SGF tools
+        - Train / tsumego / joseki / SRS
+        - KataGo analysis
+        - Pattern Search
+        - Online play / servers
+        - Teaching rooms
+        - Player stats / sync
+        - UI / accessibility
+        - Import / export
+        - New platform / packaging
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: "Describe the use case or frustration first, before the proposed implementation."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: "What would you like SWHub to do?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      description: "Show how you imagine a player/teacher using the feature step by step."
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: "What do you do today, or what other approaches did you consider?"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: "Screenshots, mockups, examples from other Go clients, links, or anything else useful."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: "I searched existing issues/discussions for a similar request."
+          required: true
