@@ -1,6 +1,6 @@
 # Two Free Ways to Run Cloud KataGo
 
-```Last updated: 20 Aug 2026```
+```Last updated: 23 Aug 2026, Katago v1.18.0```
 
 These two options can be used **individually or together**, depending on how much cloud GPU time you need.
 
@@ -61,6 +61,7 @@ Most importantly, you won't have to repeat the full KataGo setup every time you 
 Download the Google Colab or Modal Jupyter Notebook here:
 
 **[Google Colab Jupyter Notebook](./Kata_Colab.ipynb)**
+
 **[Modal Jupyter Notebook](./Kata_Modal.ipynb)**
 
 Download the notebook for the service you want to use, then upload it to the respective platform.
